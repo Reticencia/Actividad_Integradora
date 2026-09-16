@@ -1,7 +1,7 @@
 import pytest 
 from conversor import celsius_fahrenheit, kilometros_millas, pesos_dolares
 
-#Prueba parametros y con marker unitario
+#ID:1Prueba parametros y con marker unitario
 @pytest.mark.unit
 @pytest.mark.parametrize("entrada_celsius, resultado_fahrenheit", [
     (0, 32.00),
@@ -12,14 +12,14 @@ from conversor import celsius_fahrenheit, kilometros_millas, pesos_dolares
 def test_celsius_fahrenheit(entrada_celsius, resultado_fahrenheit):
     assert celsius_fahrenheit(entrada_celsius) == resultado_fahrenheit
 
-#Prueba de distancia
+#ID:2Prueba de distancia
 @pytest.mark.unit
 def test_kilometros_millas():
     assert kilometros_millas(1) == 0.62
     assert kilometros_millas(5) == 3.11
     assert kilometros_millas(10) == 6.21
 
-#Prueba de pesos a dolares
+#ID:3Prueba de pesos a dolares
 @pytest.mark.unit
 def test_pesos_dolares():
     assert pesos_dolares(18.50) == 1.00
