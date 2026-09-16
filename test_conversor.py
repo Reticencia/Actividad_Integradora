@@ -26,5 +26,5 @@ def test_kilometros_millas():
 @pytest.mark.unit
 def test_pesos_dolares():
     assert pesos_dolares(18.50) == 1.00
-    assert pesos_dolares(37.00) == 2.00
     assert pesos_dolares(92.50) == 5.00
+    assert pesos_dolares(185.00) == 10.00
